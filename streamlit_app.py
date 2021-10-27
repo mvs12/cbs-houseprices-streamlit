@@ -26,8 +26,6 @@ sidebar_title = st.sidebar.subheader("Compare house prices in the Netherlands")
 
 sidebar_text = st.sidebar.write(('''
 Compare Dutch house prices per country region (LD), province (PV) or municipality/city over the year 1995 until 2020.
- 
-[Sourcecode](https://github.com/mvs12/cbs-houseprices-streamlit)
  '''))
 
 region_1 = st.sidebar.selectbox("Select first region", (regions))
