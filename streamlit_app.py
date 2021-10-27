@@ -33,6 +33,9 @@ Compare Dutch house prices per country region (LD), province (PV) or municipalit
 region_1 = st.sidebar.selectbox("Select first region", (regions))
 region_2 = st.sidebar.selectbox("Select second region", (regions))
 
+sidebar_text = st.sidebar.write(('''
+[Sourcecode](https://github.com/mvs12/cbs-houseprices-streamlit)
+ '''))
 
 # Create callbacks/filter data on selection
 periods_filter = periods
