@@ -6,7 +6,7 @@ import json
 
 
 # Retrieve data from CBS
-@st.cache
+@st.cache_data
 def retreive_data_cbs():
     df = pd.DataFrame(cbsodata.get_data('83625ENG'))
     return df
@@ -64,4 +64,7 @@ options = {
 
 st_echarts(options=options, height="400px", theme=theme,)
 
-st.write("Source: [CBS Open data StatLine 'Existing own homes; prices, region 1995-2020'](https://opendata.cbs.nl/statline/portal.html?_la=en&_catalog=CBS&tableId=83625ENG&_theme=1102)")
+st.write("Source: [CBS Open data StatLine 'Existing own homes; prices, region 1995-2022'](https://opendata.cbs.nl/statline/portal.html?_la=en&_catalog=CBS&tableId=83625ENG&_theme=1102)")
+
+st.Dataframe(values_region_1)
+st.Dataframe(values_region_2)
