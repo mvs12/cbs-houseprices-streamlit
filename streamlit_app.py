@@ -25,7 +25,7 @@ periods = df['Periods'].unique().tolist()
 sidebar_title = st.sidebar.subheader("Compare house prices in the Netherlands")
 
 sidebar_text = st.sidebar.write(('''
-Compare Dutch house prices per country region (LD), province (PV) or municipality/city over the year 1995 until 2020.
+Compare Dutch house prices per country region (LD), province (PV) or municipality/city over the year 1995 until 2022.
  '''))
 
 region_1 = st.sidebar.selectbox("Select first region", (regions))
@@ -65,6 +65,3 @@ options = {
 st_echarts(options=options, height="400px", theme=theme,)
 
 st.write("Source: [CBS Open data StatLine 'Existing own homes; prices, region 1995-2022'](https://opendata.cbs.nl/statline/portal.html?_la=en&_catalog=CBS&tableId=83625ENG&_theme=1102)")
-
-st.write(values_region_1)
-st.write(values_region_2)
