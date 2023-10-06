@@ -66,5 +66,5 @@ st_echarts(options=options, height="400px", theme=theme,)
 
 st.write("Source: [CBS Open data StatLine 'Existing own homes; prices, region 1995-2022'](https://opendata.cbs.nl/statline/portal.html?_la=en&_catalog=CBS&tableId=83625ENG&_theme=1102)")
 
-st.Dataframe(values_region_1)
-st.Dataframe(values_region_2)
+st.write(values_region_1)
+st.write(values_region_2)
